@@ -22,14 +22,14 @@
 	</nav>
     
 	<section id="el-restaurant">
-		    <h2>El restaurant</h2>
-            <p><strong>El restaurant Orenga</strong> pren el nom de la planta aromàtica i perenne de la família de les lamiàcies. L'orenga, també anomenat herba musca o roca morera té un aroma que recorda la menta i la sajolida.</p>
-            <p>En l'àmbit culinari lliga perfecte amb <mark>amanides vegetals</mark>, sobretot amb el <mark>tomàquet</mark>, i és l'herba clàssica per condimentar <mark>carns</mark>. Aporta un gust molt fi als <mark>estofats</mark>, a les <mark>salses per a pasta</mark>, a les <mark>pizzes</mark> i a les <mark>empanades de carn</mark>. És aquest el motiu pel qual l'orenga és un nom ben representatiu que està en una bona part de l'oferta gastronòmica que oferim.</p>
-            <p>El restaurant se situa al bell mig del Parc Natural de la Serra de Collserola on gaudeix d'un entorn natural immillorable amb vistes a Barcelona, Sant Cugat del Vallès i a un petit llac. Queda a prop dels nuclis urbans de Sant Cugat del Vallés, Cerdanyola del Vallès, Montcada i Reixac, Santa Coloma de Gramenet, Badalona, Barcelona, L'Hospitalet de Llobregat, Esplugues de Llobregat, Cornellà de Llobregat, Sant Just Desvern, Sant Feliu de Llobregat, Sant Joan Despí, Molins de Rei i Valldoreix.</p>
+		  <h2>El restaurant</h2>
+          <p><strong>El restaurant Orenga</strong> pren el nom de la planta aromàtica i perenne de la família de les lamiàcies. L'orenga, també anomenat herba musca o roca morera té un aroma que recorda la menta i la sajolida.</p>
+          <p>En l'àmbit culinari lliga perfecte amb <mark>amanides vegetals</mark>, sobretot amb el <mark>tomàquet</mark>, i és l'herba clàssica per condimentar <mark>carns</mark>. Aporta un gust molt fi als <mark>estofats</mark>, a les <mark>salses per a pasta</mark>, a les <mark>pizzes</mark> i a les <mark>empanades de carn</mark>. És aquest el motiu pel qual l'orenga és un nom ben representatiu que està en una bona part de l'oferta gastronòmica que oferim.</p>
+          <p>El restaurant se situa al bell mig del Parc Natural de la Serra de Collserola on gaudeix d'un entorn natural immillorable amb vistes a Barcelona, Sant Cugat del Vallès i a un petit llac. Queda a prop dels nuclis urbans de Sant Cugat del Vallés, Cerdanyola del Vallès, Montcada i Reixac, Santa Coloma de Gramenet, Badalona, Barcelona, L'Hospitalet de Llobregat, Esplugues de Llobregat, Cornellà de Llobregat, Sant Just Desvern, Sant Feliu de Llobregat, Sant Joan Despí, Molins de Rei i Valldoreix.</p>
 	</section>
     
 	<section id="oferta-gastronomica">
-		<h2>Oferta gastronòmica</h2>
+		  <h2>Oferta gastronòmica</h2>
             <section>
                 <h3>Pizzes</h3>
                 <img src="https://images.pexels.com/photos/5903319/pexels-photo-5903319.jpeg" alt="Pizzes" width="320" height="400">
@@ -91,19 +91,20 @@
                   <label for="dia">Dia:</label>
                   <input type="date" id="dia" name="dia" required>
                 </p>
+              
                 <p>
-                  <label for="hora">Hora:</label>
-                  <select id="hora" name="hora" required>
-                    <option value="13:00">13:00</option>
-                    <option value="14:00">14:00</option>
-                    <option value="15:00">15:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
-                    <option value="22:00">22:00</option>
-                  </select>
+                <label>Hora <input type="time" name="hora" list="horesPopulars" required></label>
+                <datalist id="horesPopulars">
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="20:00">20:00</option>
+                  <option value="21:00">21:00</option>
+                  <option value="22:00">22:00</option>
+                </datalist>
                 </p>
-                <p>
                 
+                <p>                
                   <label for="ubicacio">Ubicació en el restaurant:</label>
                   <select id="ubicacio" name="ubicacio">
                       <optgroup label="Interior">
@@ -140,25 +141,24 @@
                 </p>
               </fieldset>
             </form>
-                </section>
+              
 	</section>
 
 	<section id="l-equip">
 		<h2>L’equip</h2>
 		    <figure>
-              <img src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg" alt="Joan i Maria" width="450" height="280">
-              <figcaption>Joan (xef) i Maria (xef i cap de cuina)</figcaption>
-            </figure>
-            <figure>
-              <img src="https://images.pexels.com/photos/6817133/pexels-photo-6817133.jpeg" alt="Hèctor" width="220" height="320">
-              <figcaption>Hèctor (cambrer i cap de sala)</figcaption>
-            </figure>
-            <figure>
-              <img src="https://images.pexels.com/photos/3801649/pexels-photo-3801649.jpeg" alt="Jasmine" width="450" height="280">
-              <figcaption>Jasmine (cambrera)</figcaption>
-            </figure>
-          </section>
-          
+          <img src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg" alt="Joan i Maria" width="450" height="280">
+          <figcaption>Joan (xef) i Maria (xef i cap de cuina)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.pexels.com/photos/6817133/pexels-photo-6817133.jpeg" alt="Hèctor" width="220" height="320">
+          <figcaption>Hèctor (cambrer i cap de sala)</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.pexels.com/photos/3801649/pexels-photo-3801649.jpeg" alt="Jasmine" width="450" height="280">
+          <figcaption>Jasmine (cambrera)</figcaption>
+        </figure>
+                 
 	</section>
 
 	<footer>
@@ -204,75 +204,50 @@
         <p>
             <a href="#top">Tornar al principi</a>
           </p>
-
-          <!-- Elemento details -->
-	<details class="details">
-		<!-- Elemento summary -->
-		<summary>Referències i atribucions</summary>
-		<!-- Lista no ordenada de enlaces -->
-		<ul>
-           <li> <a href="https://www.freepik.com/free-photo/drythyme_1129589.htm" target="_blank">
-                Imatge de l'orenga feta per topntp26 a Freepik
-                </a></li>
-                <ul>
-                    <li>
-                      <a href="https://www.freepik.com/free-photo/drythyme_1129589.htm" target="_blank">
-                        Imatge de l'orenga feta per topntp26 a Freepik
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pexels.com/photo/different-flavor-of-pizza-on-a-wooden-table-5903319/" target="_blank">
-                        Foto de pizzes feta per ROMAN ODINTSOV i obtinguda de Pexels
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pexels.com/photo/flat-pasta-noodle-with-green-sauce-dish-and-cherry-tomato-on-top-1435896/" target="_blank">
-                        Foto de pasta amb salsa feta per Engin Akyurt i obtinguda de Pexels
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pexels.com/photo/man-and-woman-wearing-black-and-white-striped-aprons-cooking-2696064/" target="_blank">
-                        Foto de cuiner i cuinera feta per Elle Hughes i obtinguda de Pexels
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pexels.com/photo/man-in-black-vest-standing-beside-a-window-6817133/" target="_blank">
-                        Foto de cambrer feta per Yan Krukov i obtinguda de Pexels
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.pexels.com/photo/shallow-focus-photo-of-woman-smiling-while-holding-pen-and-paper-3801649/" target="_blank">
-                        Foto de cambrera feta per Andrea Piacquadio i obtinguda de Pexels
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.flaticon.com/free-icon/youtube_1384060" target="_blank">
-                        Icona de YouTube creada per Freepik - Flaticon
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.flaticon.com/free-icon/instagram_2111463" target="_blank">
-                        Icona d'Instagram creada per Pixel perfect - Flaticon
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.flaticon.com/free-icon/twitter_733579" target="_blank">
-                        Icona de Twitter creada per Pixel perfect - Flaticon
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.flaticon.com/free-icon/facebook_5968764" target="_blank">
-                        Icona de Facebook creada per Freepik - Flaticon
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.flaticon.com/free-icon/linkedin_174857" target="_blank">
-                        Icona de LinkedIn creada per Freepik - Flaticon
-                      </a>
-                    </li>
-                  </ul>
-                  
-			 </footer>
+      </section>
+      
+	  <details class="details">
+		  <summary>Referències i atribucions</summary>
+			  <ul>
+            <li> <a href="https://www.freepik.com/free-photo/drythyme_1129589.htm" target="_blank">
+                 Imatge de l'orenga feta per topntp26 a Freepik</a> 
+            </li>
+            <li><a href="https://www.freepik.com/free-photo/drythyme_1129589.htm" target="_blank">
+                 Imatge de l'orenga feta per topntp26 a Freepik</a>
+            </li>
+            <li><a href="https://www.pexels.com/photo/different-flavor-of-pizza-on-a-wooden-table-5903319/" target="_blank">
+                 Foto de pizzes feta per ROMAN ODINTSOV i obtinguda de Pexels</a>
+            </li>
+            <li><a href="https://www.pexels.com/photo/flat-pasta-noodle-with-green-sauce-dish-and-cherry-tomato-on-top-1435896/" target="_blank">
+                 Foto de pasta amb salsa feta per Engin Akyurt i obtinguda de Pexels</a>
+            </li>
+            <li><a href="https://www.pexels.com/photo/man-and-woman-wearing-black-and-white-striped-aprons-cooking-2696064/" target="_blank">
+                 Foto de cuiner i cuinera feta per Elle Hughes i obtinguda de Pexel</a>
+            </li>
+            <li><a href="https://www.pexels.com/photo/man-in-black-vest-standing-beside-a-window-6817133/" target="_blank">
+                 Foto de cambrer feta per Yan Krukov i obtinguda de Pexels</a>
+            </li>
+            <li><a href="https://www.pexels.com/photo/shallow-focus-photo-of-woman-smiling-while-holding-pen-and-paper-3801649/" target="_blank">
+                  Foto de cambrera feta per Andrea Piacquadio i obtinguda de Pexels</a>
+            </li>
+            <li><a href="https://www.flaticon.com/free-icon/youtube_1384060" target="_blank">
+                  Icona de YouTube creada per Freepik - Flaticon</a>
+            </li>
+            <li><a href="https://www.flaticon.com/free-icon/instagram_2111463" target="_blank">
+                 Icona d'Instagram creada per Pixel perfect - Flaticon</a>
+            </li>
+            <li><a href="https://www.flaticon.com/free-icon/twitter_733579" target="_blank">
+                  Icona de Twitter creada per Pixel perfect - Flaticon</a>
+            </li>
+            <li><a href="https://www.flaticon.com/free-icon/facebook_5968764" target="_blank">
+                  Icona de Facebook creada per Freepik - Flaticon</a>
+            </li>
+            <li><a href="https://www.flaticon.com/free-icon/linkedin_174857" target="_blank">
+                   Icona de LinkedIn creada per Freepik - Flaticon</a>
+            </li>
+      </ul>
+    </details>           
+</footer>
       
 </body>
 
