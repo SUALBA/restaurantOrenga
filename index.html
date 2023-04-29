@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    
     <title>Restaurant Orenga</title>
 </head>
 <body>
 	<header>
 		<h1>Restaurant Orenga</h1>
 		<img src="https://img.freepik.com/free-photo/drythyme_1339-195.jpg" alt="Orenga, l'herba essencial al restaurant" width="220" height="104">
-	</header>
-
-	<nav>
+	
+	  <nav>
 		<a href="#el-restaurant">El restaurant</a>
 		<a href="#oferta-gastronomica">Oferta gastronòmica</a>
 		<a href="#reserves">Reserves</a>
 		<a href="#l-equip">L’equip</a>
 		<a href="workwithus.html">Treballa amb nosaltres</a>
 		<a href="#contacte">Contacte</a>
-	</nav>
-    
+	  </nav>
+  </header>
 	<section id="el-restaurant">
 		  <h2>El restaurant</h2>
           <p><strong>El restaurant Orenga</strong> pren el nom de la planta aromàtica i perenne de la família de les lamiàcies. L'orenga, també anomenat herba musca o roca morera té un aroma que recorda la menta i la sajolida.</p>
@@ -76,8 +78,13 @@
                   <input type="email" id="correu" name="correu" placeholder="nom@outlook.com, nom@gmail.com" size="60" multiple required>
                 </p>
                 <p>
-                  <label for="comensals">Número de comensals:</label>
-                  <input type="number" id="comensals" name="comensals" min="1" max="50" step="1" value="4" required>
+                  <label for="numeroComensals">Número de comensals:</label>
+                  <input type="number" id="numeroComensals" name="numeroComensals" min="1" max="50" step="1" value="4" required>
+                  <small>
+                    <span>(El preu total aproximat a 50€/persona seria de</span>
+                    <output for="numeroComensals" id="preuAproximat">200</output>
+                    <span>€)</span>
+                  </small>
                 </p>
                 <p>
                   <span>Hi ha un o més d'un comensal menor de 5 anys?</span><br>
@@ -164,7 +171,7 @@
 	<footer>
         <section id="contacte">
             <h2>Contacte</h2>
-        <div>
+        <address>
           <p>
             URL:<a href="#top">https://www.restaurantorenga.cat</a>
           </p>
@@ -183,7 +190,7 @@
           <p>
             Horari:De dimarts a diumenge de 12:30 a 16:30 i de 19:30 a 23:30.
           </p>
-          <p>
+           <p>
             <strong>Xarxes socials:</strong>
             <a href="https://www.youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="25" height="25"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="25" height="25"></a>
@@ -191,15 +198,15 @@
             <a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" width="25" height="25"></a>
             <a href="https://www.linkedin.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="25" height="25"></a>
           </p>
-        </div>
-        <p class="important-text">
+        </address>
+        <p class="copyright">
             <strong> Copyright © Restaurant Orenga, 2022. Tots els drets reservats.</strong>
         </p>
-        <p class="small-text">
-          Sense perjudici de les exempcions legals existents, queda prohibida la reproducció, distribució, comunicació pública o transformació d'aquesta obra sense l'autorització del titular dels drets, i qualsevol altre acte que en contravingui els drets de propietat intel·lectual i industrial.
+        <p class="inici">
+          <small-text> Sense perjudici de les exempcions legals existents, queda prohibida la reproducció, distribució, comunicació pública o transformació d'aquesta obra sense l'autorització del titular dels drets, i qualsevol altre acte que en contravingui els drets de propietat intel·lectual i industrial.</p></small-text>
         </p>
-        <p class="small-text">
-          Per a qualsevol ús que se'n vulgui fer no previst a la llei, dirigiu-vos a:<a href="mailto:legal@restaurantorenga.cat">legal@restaurantorenga.cat</a>
+        <p class="inici">
+         <small-text> Per a qualsevol ús que se'n vulgui fer no previst a la llei, dirigiu-vos a:<a href="mailto:legal@restaurantorenga.cat">legal@restaurantorenga.cat</a></small-text>
         </p>
         <p>
             <a href="#top">Tornar al principi</a>
